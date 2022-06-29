@@ -19,7 +19,7 @@ private:
                 nQueens[row][col] = '.';
             }
     }
-    bool isValid(std::vector<std::string> &nQueens, int row, int col, int &n) {
+    bool isValid(vector<string> &nQueens, int row, int col, int &n) {
         for (int i = 0; i != row; ++i)
             if (nQueens[i][col] == 'Q')
                 return false;
